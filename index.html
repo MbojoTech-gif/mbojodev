@@ -78,60 +78,9 @@
             </div>
             
             <div class="hero-image">
-                <div class="code-window">
-                    <div class="window-header">
-                        <div class="window-dots">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                        </div>
-                        <span class="window-title">portfolio.php</span>
-                    </div>
-                    <div class="window-content">
-                        <pre><code class="php">
-&lt;?php
-// mbojodev - Web Developer Portfolio
-class Developer {
-    public $name = "mbojodev";
-    public $role = "Web Developer";
-    public $skills = ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"];
-    
-    public function buildWebsite($design, $functionality) {
-        $cleanCode = $this->writeCleanCode();
-        $responsive = $this->makeResponsive();
-        $optimized = $this->optimizePerformance();
-        
-        return $cleanCode . $responsive . $optimized;
-    }
-    
-    private function writeCleanCode() {
-        return "Semantic HTML + Modular CSS";
-    }
-    
-    private function makeResponsive() {
-        return "Mobile-first responsive design";
-    }
-    
-    private function optimizePerformance() {
-        return "Fast loading & SEO optimized";
-    }
-}
-
-$me = new Developer();
-?&gt;
-
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;title&gt;&lt;?php echo $me-&gt;name; ?&gt; Portfolio&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Building the web with precision&lt;/h1&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-                        </code></pre>
-                    </div>
+                <!-- Profile image or alternative content -->
+                <div class="profile-container">
+                    <img src="images/about/profile.jpg" alt="mbojodev - Web Developer" class="profile-image">
                 </div>
             </div>
         </div>
