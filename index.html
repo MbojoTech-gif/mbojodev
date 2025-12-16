@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mbojodev | Web Developer Portfolio</title>
+    <meta name="description" content="Professional web developer specializing in HTML, CSS, JavaScript, and PHP. Building modern, responsive websites and applications.">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/about/profile.jpg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">mbojo<span class="logo-highlight">dev</span></span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Hi, I'm </span>
+                    <span class="hero-name">mbojodev</span>
+                </h1>
+                <h2 class="hero-subtitle">Web Developer</h2>
+                <p class="hero-description">
+                    I build clean, responsive, and functional websites using <strong>HTML, CSS, JavaScript, and PHP</strong>. 
+                    Passionate about creating web solutions that are fast, accessible, and user-friendly.
+                </p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">
+                        <i class="fas fa-code"></i> View My Work
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                </div>
+                <div class="hero-tech">
+                    <span class="tech-label">My Tech Stack:</span>
+                    <div class="tech-stack">
+                        <span class="tech-item">HTML5</span>
+                        <span class="tech-item">CSS3</span>
+                        <span class="tech-item">JavaScript</span>
+                        <span class="tech-item">PHP</span>
+                        <span class="tech-item">MySQL</span>
+                        <span class="tech-item">jQuery</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">portfolio.php</span>
+                    </div>
+                    <div class="window-content">
+                        <pre><code class="php">
+&lt;?php
+// mbojodev - Web Developer Portfolio
+class Developer {
+    public $name = "mbojodev";
+    public $role = "Web Developer";
+    public $skills = ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"];
+    
+    public function buildWebsite($design, $functionality) {
+        $cleanCode = $this->writeCleanCode();
+        $responsive = $this->makeResponsive();
+        $optimized = $this->optimizePerformance();
+        
+        return $cleanCode . $responsive . $optimized;
+    }
+    
+    private function writeCleanCode() {
+        return "Semantic HTML + Modular CSS";
+    }
+    
+    private function makeResponsive() {
+        return "Mobile-first responsive design";
+    }
+    
+    private function optimizePerformance() {
+        return "Fast loading & SEO optimized";
+    }
+}
+
+$me = new Developer();
+?&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;&lt;?php echo $me-&gt;name; ?&gt; Portfolio&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Building the web with precision&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Preview -->
+    <section class="featured-projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Built with HTML, CSS, JS & PHP</p>
+                <a href="projects.html" class="view-all">View All Projects <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-badge">PHP Project</div>
+                        <img src="images/projects/project1.png" alt="Business Website" onerror="this.style.display='none'">
+                        <div class="project-overlay">
+                            <h3>Business Website</h3>
+                            <p>PHP CMS with admin panel</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Company Website with CMS</h3>
+                        <p class="project-description">
+                            A complete business website with custom PHP content management system, contact forms, and dynamic content.
+                        </p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>JavaScript</span>
+                            <span>CSS Grid</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects.html#project1" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-badge">JavaScript App</div>
+                        <img src="images/projects/project1.png" alt="Web Application" onerror="this.style.display='none'">
+                        <div class="project-overlay">
+                            <h3>Web App</h3>
+                            <p>Interactive JS application</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management Application</h3>
+                        <p class="project-description">
+                            A responsive web application with drag-and-drop functionality, local storage, and interactive UI using vanilla JavaScript.
+                        </p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Local Storage API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects.html#project2" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-badge">Responsive Design</div>
+                        <img src="images/projects/project1.png" alt="Portfolio Website" onerror="this.style.display='none'">
+                        <div class="project-overlay">
+                            <h3>Portfolio Site</h3>
+                            <p>Mobile-first responsive design</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Responsive Portfolio Template</h3>
+                        <p class="project-description">
+                            A mobile-first responsive portfolio template with smooth animations, clean design, and cross-browser compatibility.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3 Flexbox/Grid</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects.html#project3" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Services</h2>
+                <p class="section-subtitle">What I can build for you</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Custom Website Development</h3>
+                    <p class="service-description">
+                        Building responsive websites from scratch using HTML, CSS, and JavaScript tailored to your specific needs.
+                    </p>
+                    <a href="services.html#websites" class="service-link">
+                        Learn More <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="service-title">PHP Web Applications</h3>
+                    <p class="service-description">
+                        Developing dynamic web applications with PHP and MySQL database integration for interactive functionality.
+                    </p>
+                    <a href="services.html#php" class="service-link">
+                        Learn More <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">Responsive Design</h3>
+                    <p class="service-description">
+                        Creating websites that work perfectly on all devices - desktops, tablets, and mobile phones.
+                    </p>
+                    <a href="services.html#responsive" class="service-link">
+                        Learn More <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="services-cta">
+                <a href="services.html" class="btn btn-primary">
+                    <i class="fas fa-list"></i> View All Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to Build Something Amazing?</h2>
+            <p class="cta-text">
+                Let's work together to create a website that meets your goals and exceeds your expectations.
+            </p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-large btn-primary">
+                    <i class="fas fa-envelope"></i> Start a Project
+                </a>
+                <a href="about.html" class="btn btn-large btn-secondary">
+                    <i class="fas fa-user"></i> Learn About Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">mbojo<span>dev</span></a>
+                    <p class="footer-tagline">Building the web with clean code and creativity.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/mbojodev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/mbojodev" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/mbojodev" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:hello@mbojodev.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Services</h3>
+                    <ul>
+                        <li><a href="services.html#websites">Website Development</a></li>
+                        <li><a href="services.html#php">PHP Applications</a></li>
+                        <li><a href="services.html#responsive">Responsive Design</a></li>
+                        <li><a href="services.html#maintenance">Website Maintenance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Get In Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Web Developer</p>
+                    <p><i class="fas fa-envelope"></i> hello@mbojodev.com</p>
+                    <p><i class="fas fa-phone"></i> Available for projects</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> mbojodev. All rights reserved.</p>
+                <p>Built with <i class="fas fa-heart"></i> and pure HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    
+    <!-- Inline Script for Current Year -->
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Simple mobile menu toggle
+        document.getElementById('menuToggle')?.addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

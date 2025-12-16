@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | mbojodev - Web Development Services</title>
+    <meta name="description" content="Professional web development services including custom websites, PHP applications, responsive design, and website maintenance. Let's build your next project.">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">mbojo<span class="logo-highlight">dev</span></span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Services Hero Section -->
+    <section class="services-hero" id="websites">
+        <div class="container">
+            <div class="services-hero-content">
+                <h1 class="services-hero-title">Web Development <span class="highlight">Services</span></h1>
+                <p class="services-hero-subtitle">
+                    Professional web solutions tailored to your needs. From simple websites to complex web applications, 
+                    I deliver quality work that drives results.
+                </p>
+                <div class="services-hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Support Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Services -->
+    <section class="main-services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What I Offer</h2>
+                <p class="section-subtitle">Comprehensive web development solutions for businesses and individuals</p>
+            </div>
+
+            <div class="services-cards">
+                <!-- Service 1: Custom Website Development -->
+                <div class="service-detail-card" id="custom-websites">
+                    <div class="service-detail-header">
+                        <div class="service-icon-large">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="service-header-content">
+                            <h3 class="service-detail-title">Custom Website Development</h3>
+                            <p class="service-detail-subtitle">From concept to launch, I build websites that work</p>
+                            <div class="service-price">
+                                <span class="price">Starting at $999</span>
+                                <span class="price-note">One-time fee</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-detail-content">
+                        <p class="service-description">
+                            I create bespoke websites tailored to your specific needs using <strong>HTML5, CSS3, and JavaScript</strong>. 
+                            Whether you need a simple landing page or a multi-page business website, I focus on clean code, 
+                            fast loading times, and excellent user experience.
+                        </p>
+                        
+                        <div class="service-features">
+                            <h4 class="features-title">What's Included:</h4>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check-circle"></i> Responsive design (mobile, tablet, desktop)</li>
+                                <li><i class="fas fa-check-circle"></i> SEO-friendly structure and metadata</li>
+                                <li><i class="fas fa-check-circle"></i> Cross-browser compatibility</li>
+                                <li><i class="fas fa-check-circle"></i> Contact form integration</li>
+                                <li><i class="fas fa-check-circle"></i> Basic on-page animations</li>
+                                <li><i class="fas fa-check-circle"></i> Performance optimization</li>
+                                <li><i class="fas fa-check-circle"></i> 1 month of free support</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="service-tech">
+                            <h4 class="tech-title">Technologies Used:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">jQuery</span>
+                                <span class="tech-tag">Bootstrap</span>
+                                <span class="tech-tag">Git</span>
+                            </div>
+                        </div>
+                        
+                        <div class="service-timeline">
+                            <h4 class="timeline-title">Typical Timeline:</h4>
+                            <div class="timeline-steps">
+                                <div class="timeline-step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h5>Planning & Design</h5>
+                                        <p>3-5 days for wireframes and design approval</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h5>Development</h5>
+                                        <p>7-14 days for coding and implementation</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h5>Testing & Launch</h5>
+                                        <p>3-5 days for testing, revisions, and deployment</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="service-cta">
+                            <a href="contact.html?service=custom-website" class="btn btn-primary">
+                                <i class="fas fa-calendar-check"></i> Get a Quote
+                            </a>
+                            <a href="projects.html#websites" class="btn btn-secondary">
+                                <i class="fas fa-eye"></i> See Examples
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: PHP Web Applications -->
+                <div class="service-detail-card" id="php">
+                    <div class="service-detail-header">
+                        <div class="service-icon-large">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="service-header-content">
+                            <h3 class="service-detail-title">PHP Web Applications</h3>
+                            <p class="service-detail-subtitle">Dynamic, database-driven web solutions</p>
+                            <div class="service-price">
+                                <span class="price">Starting at $599</span>
+                                <span class="price-note">Custom pricing based on complexity</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-detail-content">
+                        <p class="service-description">
+                            Need more than a static website? I develop custom web applications using <strong>PHP and MySQL</strong> 
+                            that can handle user accounts, data processing, content management, and complex business logic. 
+                            Perfect for businesses needing custom functionality.
+                        </p>
+                        
+                        <div class="service-features">
+                            <h4 class="features-title">What's Included:</h4>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check-circle"></i> Custom PHP development</li>
+                                <li><i class="fas fa-check-circle"></i> MySQL database design & implementation</li>
+                                <li><i class="fas fa-check-circle"></i> User authentication & authorization</li>
+                                <li><i class="fas fa-check-circle"></i> Admin dashboard/control panel</li>
+                                <li><i class="fas fa-check-circle"></i> API integration (if needed)</li>
+                                <li><i class="fas fa-check-circle"></i> Data export/import functionality</li>
+                                <li><i class="fas fa-check-circle"></i> Security best practices implementation</li>
+                                <li><i class="fas fa-check-circle"></i> 3 months of free support</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="service-tech">
+                            <h4 class="tech-title">Technologies Used:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">AJAX</span>
+                                <span class="tech-tag">REST APIs</span>
+                                <span class="tech-tag">jQuery</span>
+                                <span class="tech-tag">Composer</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-types">
+                            <h4 class="types-title">Common Project Types:</h4>
+                            <div class="type-cards">
+                                <div class="type-card">
+                                    <h5>Business Directories</h5>
+                                    <p>Listing platforms with search, filters, and user submissions</p>
+                                </div>
+                                <div class="type-card">
+                                    <h5>E-commerce Platforms</h5>
+                                    <p>Online stores with cart, checkout, and payment processing</p>
+                                </div>
+                                <div class="type-card">
+                                    <h5>Booking Systems</h5>
+                                    <p>Appointment scheduling with calendar integration</p>
+                                </div>
+                                <div class="type-card">
+                                    <h5>Content Management</h5>
+                                    <p>Custom CMS for managing website content</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="service-cta">
+                            <a href="contact.html?service=php-application" class="btn btn-primary">
+                                <i class="fas fa-calendar-check"></i> Discuss Your Project
+                            </a>
+                            <a href="projects.html#php" class="btn btn-secondary">
+                                <i class="fas fa-eye"></i> View PHP Projects
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: Responsive Design -->
+                <div class="service-detail-card" id="responsive">
+                    <div class="service-detail-header">
+                        <div class="service-icon-large">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="service-header-content">
+                            <h3 class="service-detail-title">Responsive Design & Optimization</h3>
+                            <p class="service-detail-subtitle">Make your website work perfectly on all devices</p>
+                            <div class="service-price">
+                                <span class="price">Starting at $499</span>
+                                <span class="price-note">For existing websites</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-detail-content">
+                        <p class="service-description">
+                            Over 60% of web traffic comes from mobile devices. I can transform your existing website into a 
+                            fully responsive, mobile-friendly experience or build new sites with a mobile-first approach. 
+                            I also optimize for performance and accessibility.
+                        </p>
+                        
+                        <div class="service-features">
+                            <h4 class="features-title">What's Included:</h4>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check-circle"></i> Mobile-first responsive design</li>
+                                <li><i class="fas fa-check-circle"></i> Cross-device testing (phone, tablet, desktop)</li>
+                                <li><i class="fas fa-check-circle"></i> Performance optimization (PageSpeed scores)</li>
+                                <li><i class="fas fa-check-circle"></i> Accessibility improvements (WCAG guidelines)</li>
+                                <li><i class="fas fa-check-circle"></i> Touch-friendly navigation</li>
+                                <li><i class="fas fa-check-circle"></i> Image optimization for faster loading</li>
+                                <li><i class="fas fa-check-circle"></i> Browser compatibility fixes</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="service-tech">
+                            <h4 class="tech-title">Technologies & Techniques:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">CSS Flexbox</span>
+                                <span class="tech-tag">CSS Grid</span>
+                                <span class="tech-tag">Media Queries</span>
+                                <span class="tech-tag">Mobile-first CSS</span>
+                                <span class="tech-tag">Image Optimization</span>
+                                <span class="tech-tag">Lazy Loading</span>
+                                <span class="tech-tag">Minification</span>
+                            </div>
+                        </div>
+                        
+                        <div class="performance-metrics">
+                            <h4 class="metrics-title">Typical Results:</h4>
+                            <div class="metrics-grid">
+                                <div class="metric-card">
+                                    <div class="metric-value">50-80%</div>
+                                    <div class="metric-label">Faster loading</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-value">90+</div>
+                                    <div class="metric-label">PageSpeed score</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-value">100%</div>
+                                    <div class="metric-label">Mobile responsive</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-value">AA</div>
+                                    <div class="metric-label">Accessibility rating</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="service-cta">
+                            <a href="contact.html?service=responsive-design" class="btn btn-primary">
+                                <i class="fas fa-magic"></i> Optimize Your Site
+                            </a>
+                            <a href="projects.html#responsive" class="btn btn-secondary">
+                                <i class="fas fa-eye"></i> See Before/After
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4: Website Maintenance -->
+                <div class="service-detail-card" id="maintenance">
+                    <div class="service-detail-header">
+                        <div class="service-icon-large">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="service-header-content">
+                            <h3 class="service-detail-title">Website Maintenance & Support</h3>
+                            <p class="service-detail-subtitle">Keep your website running smoothly</p>
+                            <div class="service-price">
+                                <span class="price">From $99/month</span>
+                                <span class="price-note">Flexible plans available</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-detail-content">
+                        <p class="service-description">
+                            Your website needs regular care to stay secure, fast, and functional. I offer ongoing maintenance 
+                            plans to handle updates, backups, security monitoring, and content changes so you can focus on your business.
+                        </p>
+                        
+                        <div class="service-plans">
+                            <div class="plan-card">
+                                <h4 class="plan-name">Basic Plan</h4>
+                                <div class="plan-price">$99<span>/month</span></div>
+                                <ul class="plan-features">
+                                    <li><i class="fas fa-check"></i> Weekly backups</li>
+                                    <li><i class="fas fa-check"></i> Security monitoring</li>
+                                    <li><i class="fas fa-check"></i> Uptime monitoring</li>
+                                    <li><i class="fas fa-check"></i> Software updates</li>
+                                    <li><i class="fas fa-times"></i> Content updates</li>
+                                    <li><i class="fas fa-times"></i> Emergency support</li>
+                                </ul>
+                                <a href="contact.html?plan=basic" class="btn btn-secondary">Choose Basic</a>
+                            </div>
+                            
+                            <div class="plan-card popular">
+                                <div class="plan-badge">Most Popular</div>
+                                <h4 class="plan-name">Standard Plan</h4>
+                                <div class="plan-price">$199<span>/month</span></div>
+                                <ul class="plan-features">
+                                    <li><i class="fas fa-check"></i> Everything in Basic</li>
+                                    <li><i class="fas fa-check"></i> Daily backups</li>
+                                    <li><i class="fas fa-check"></i> Up to 5 content updates</li>
+                                    <li><i class="fas fa-check"></i> Monthly performance reports</li>
+                                    <li><i class="fas fa-check"></i> SEO maintenance</li>
+                                    <li><i class="fas fa-times"></i> 24/7 emergency support</li>
+                                </ul>
+                                <a href="contact.html?plan=standard" class="btn btn-primary">Choose Standard</a>
+                            </div>
+                            
+                            <div class="plan-card">
+                                <h4 class="plan-name">Premium Plan</h4>
+                                <div class="plan-price">$349<span>/month</span></div>
+                                <ul class="plan-features">
+                                    <li><i class="fas fa-check"></i> Everything in Standard</li>
+                                    <li><i class="fas fa-check"></i> Unlimited content updates</li>
+                                    <li><i class="fas fa-check"></i> 24/7 emergency support</li>
+                                    <li><i class="fas fa-check"></i> Priority bug fixes</li>
+                                    <li><i class="fas fa-check"></i> Monthly strategy calls</li>
+                                    <li><i class="fas fa-check"></i> Advanced security scans</li>
+                                </ul>
+                                <a href="contact.html?plan=premium" class="btn btn-secondary">Choose Premium</a>
+                            </div>
+                        </div>
+                        
+                        <div class="maintenance-features">
+                            <h4 class="features-title">Additional Services (À la carte):</h4>
+                            <div class="additional-services">
+                                <div class="additional-service">
+                                    <h5>Content Updates</h5>
+                                    <p>Text, image, or page updates: $49/hour</p>
+                                </div>
+                                <div class="additional-service">
+                                    <h5>Bug Fixes</h5>
+                                    <p>Fix website issues or errors: $79/hour</p>
+                                </div>
+                                <div class="additional-service">
+                                    <h5>Security Audit</h5>
+                                    <p>Comprehensive security review: $299 one-time</p>
+                                </div>
+                                <div class="additional-service">
+                                    <h5>Performance Audit</h5>
+                                    <p>Optimization analysis & recommendations: $199 one-time</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="service-cta">
+                            <a href="contact.html?service=maintenance" class="btn btn-primary">
+                                <i class="fas fa-headset"></i> Get Maintenance Plan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Development Process</h2>
+                <p class="section-subtitle">A structured approach to ensure project success</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Discovery & Planning</h3>
+                        <p class="step-description">
+                            We discuss your goals, target audience, and requirements. I create a detailed project plan 
+                            with timeline, deliverables, and cost estimate.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Design & Prototyping</h3>
+                        <p class="step-description">
+                            I create wireframes and design mockups for your approval. We iterate until the design 
+                            perfectly matches your vision and user needs.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Development</h3>
+                        <p class="step-description">
+                            I write clean, efficient code using the latest web technologies. You'll receive regular 
+                            updates and can see progress along the way.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Testing & Quality Assurance</h3>
+                        <p class="step-description">
+                            Rigorous testing across devices, browsers, and scenarios. I fix any issues and ensure 
+                            everything works perfectly.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Launch & Support</h3>
+                        <p class="step-description">
+                            I deploy your website and provide training if needed. Ongoing support ensures your 
+                            site continues to perform optimally.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common questions about my web development services</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How long does it take to build a website?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The timeline depends on the project complexity. A simple website takes 2-3 weeks, 
+                        while complex web applications can take 6-8 weeks or more. I provide a detailed 
+                        timeline during the planning phase.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you work with clients remotely?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! I work with clients worldwide via email, video calls, and project management tools. 
+                        Remote collaboration allows me to work efficiently with clients from anywhere.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What do you need from me to get started?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>To start your project, I need: 1) A clear description of your goals, 2) Any design 
+                        preferences or examples you like, 3) Your content (text and images), and 4) Access to 
+                        your domain/hosting if applicable.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can you work with my existing website?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! I can redesign, optimize, or add new features to your existing website. 
+                        I'll review your current site and provide recommendations for improvement.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What about website hosting and domain?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I can recommend reliable hosting providers based on your needs. I also assist with 
+                        domain registration and can manage hosting setup for you if needed.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you provide training after the website is built?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! I provide documentation and training sessions to help you manage your website. 
+                        For content management systems, I show you how to make updates yourself.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="services-cta">
+        <div class="container">
+            <h2 class="cta-title">Ready to Start Your Project?</h2>
+            <p class="cta-text">
+                Let's discuss your web development needs. I'll provide a free consultation and quote.
+            </p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-large btn-primary">
+                    <i class="fas fa-calendar"></i> Schedule a Free Consultation
+                </a>
+                <a href="projects.html" class="btn btn-large btn-secondary">
+                    <i class="fas fa-eye"></i> View Portfolio
+                </a>
+            </div>
+            <p class="cta-note">
+                <i class="fas fa-envelope"></i> Prefer email? Contact me at <strong>techmbojo@gmail.com</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">mbojo<span>dev</span></a>
+                    <p class="footer-tagline">Building the web with clean code and creativity.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/mbojodev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/mbojodev" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/mbojodev" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:hello@mbojodev.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Services</h3>
+                    <ul>
+                        <li><a href="services.html#websites">Custom Websites</a></li>
+                        <li><a href="services.html#php">PHP Applications</a></li>
+                        <li><a href="services.html#responsive">Responsive Design</a></li>
+                        <li><a href="services.html#maintenance">Website Maintenance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Get In Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Web Developer</p>
+                    <p><i class="fas fa-envelope"></i> hello@mbojodev.com</p>
+                    <p><i class="fas fa-phone"></i> Available for projects</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> mbojodev. All rights reserved.</p>
+                <p>Built with <i class="fas fa-heart"></i> and pure HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    
+    <!-- Services Page Specific Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // FAQ Accordion Functionality
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle active class on question
+                    this.classList.toggle('active');
+                    
+                    // Toggle answer visibility
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                        answer.style.paddingTop = '0';
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        answer.style.paddingTop = '20px';
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                    
+                    // Close other FAQ items
+                    faqQuestions.forEach(otherQuestion => {
+                        if (otherQuestion !== this) {
+                            otherQuestion.classList.remove('active');
+                            const otherAnswer = otherQuestion.nextElementSibling;
+                            const otherIcon = otherQuestion.querySelector('i');
+                            otherAnswer.style.maxHeight = null;
+                            otherAnswer.style.paddingTop = '0';
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+                });
+            });
+            
+            // Highlight current service in navigation if coming from hash
+            const hash = window.location.hash;
+            if (hash) {
+                const targetElement = document.querySelector(hash);
+                if (targetElement) {
+                    setTimeout(() => {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                        targetElement.style.boxShadow = '0 0 0 3px rgba(37, 99, 235, 0.3)';
+                        setTimeout(() => {
+                            targetElement.style.boxShadow = '';
+                        }, 2000);
+                    }, 500);
+                }
+            }
+            
+            // Process steps animation
+            const processSteps = document.querySelectorAll('.process-step');
+            
+            const animateProcessSteps = function() {
+                processSteps.forEach((step, index) => {
+                    const rect = step.getBoundingClientRect();
+                    const isVisible = (rect.top <= window.innerHeight * 0.8);
+                    
+                    if (isVisible) {
+                        setTimeout(() => {
+                            step.style.opacity = '1';
+                            step.style.transform = 'translateY(0)';
+                        }, index * 200);
+                    }
+                });
+            };
+            
+            // Set initial state for process steps
+            processSteps.forEach(step => {
+                step.style.opacity = '0';
+                step.style.transform = 'translateY(30px)';
+                step.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            });
+            
+            window.addEventListener('load', animateProcessSteps);
+            window.addEventListener('scroll', animateProcessSteps);
+            
+            // Service cards animation
+            const serviceCards = document.querySelectorAll('.service-detail-card');
+            
+            const animateServiceCards = function() {
+                serviceCards.forEach((card, index) => {
+                    const rect = card.getBoundingClientRect();
+                    const isVisible = (rect.top <= window.innerHeight * 0.9);
+                    
+                    if (isVisible) {
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, index * 100);
+                    }
+                });
+            };
+            
+            // Set initial state for service cards
+            serviceCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            });
+            
+            window.addEventListener('load', animateServiceCards);
+            window.addEventListener('scroll', animateServiceCards);
+        });
+    </script>
+</body>
+</html>

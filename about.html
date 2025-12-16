@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | mbojodev - Web Developer</title>
+    <meta name="description" content="Learn about mbojodev's journey, skills, experience, and passion for web development with HTML, CSS, JavaScript, and PHP.">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">mbojo<span class="logo-highlight">dev</span></span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="about-hero-content">
+                <h1 class="about-hero-title">My Journey in <span class="highlight">Web Development</span></h1>
+                <p class="about-hero-subtitle">
+                    From writing my first line of HTML to building complex web applications - 
+                    here's my story and what drives my passion for creating on the web.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Profile Section -->
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="images/about/profile.jpg" alt="mbojodev - Web Developer" onerror="this.src='https://via.placeholder.com/400x500/2563eb/ffffff?text=mbojodev'">
+                        <div class="profile-status">
+                            <span class="status-dot"></span>
+                            <span class="status-text">Available for projects</span>
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h2 class="profile-name">mbojodev</h2>
+                        <p class="profile-title">Web Developer</p>
+                        <div class="profile-contact">
+                            <p><i class="fas fa-map-marker-alt"></i> Remote Developer</p>
+                            <p><i class="fas fa-envelope"></i> techmbojo@gmail.com</p>
+                            <p><i class="fas fa-globe"></i> mbojodev.com</p>
+                        </div>
+                        <div class="profile-social">
+                            <a href="https://github.com/mbojodev" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/mbojodev" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://twitter.com/mbojodev" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://codepen.io/mbojodev" target="_blank" rel="noopener noreferrer" class="social-link" title="CodePen">
+                                <i class="fab fa-codepen"></i>
+                            </a>
+                        </div>
+                        <a href="downloads/Simon cv.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Main About Content -->
+                <div class="about-main">
+                    <!-- My Story -->
+                    <div class="about-section">
+                        <h2 class="section-title">My Story</h2>
+                        <div class="story-content">
+                            <p>
+                                My journey into web development started with curiosity about how websites work. 
+                                I wrote my first line of HTML over 4 years ago and instantly fell in love with 
+                                the ability to create something from nothing using just code.
+                            </p>
+                            <p>
+                                What began as a hobby quickly turned into a passion. I spent countless hours 
+                                learning CSS to make websites look beautiful, JavaScript to make them interactive, 
+                                and PHP to add dynamic functionality. Each new skill opened up more possibilities 
+                                for what I could build.
+                            </p>
+                            <p>
+                                Today, I specialize in building responsive, accessible websites and web applications 
+                                using <strong>HTML5, CSS3, JavaScript, and PHP</strong>. I believe in writing clean, 
+                                maintainable code and creating user experiences that are both beautiful and functional.
+                            </p>
+                            <blockquote class="quote">
+                                "I don't just build websites - I build solutions that solve real problems 
+                                and create value for users and businesses."
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="about-section">
+                        <h2 class="section-title">My Skills</h2>
+                        <div class="skills-grid">
+                            <!-- Frontend Skills -->
+                            <div class="skill-category">
+                                <h3 class="skill-category-title">
+                                    <i class="fas fa-code skill-icon"></i>
+                                    Frontend Development
+                                </h3>
+                                <div class="skill-list">
+                                    <div class="skill-item">
+                                        <span class="skill-name">HTML5</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" data-level="95%"></div>
+                                        </div>
+                                        <span class="skill-percent">95%</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-name">CSS3 / SCSS</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" data-level="90%"></div>
+                                        </div>
+                                        <span class="skill-percent">90%</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-name">JavaScript</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" data-level="85%"></div>
+                                        </div>
+                                        <span class="skill-percent">85%</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-name">Responsive Design</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" data-level="92%"></div>
+                                        </div>
+                                        <span class="skill-percent">92%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Backend Skills -->
+                            <div class="skill-category">
+                                <h3 class="skill-category-title">
+                                    <i class="fas fa-server skill-icon"></i>
+                                    Backend Development
+                                </h3>
+                                <div class="skill-list">
+                                    <div class="skill-item">
+                                        <span class="skill-name">PHP</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" data-level="88%"></div>
+                                        </div>
+                                        <span class="skill-percent">88%</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-name">MySQL</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" data-level="82%"></div>
+                                        </div>
+                                        <span class="skill-percent">82%</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-name">REST APIs</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" data-level="80%"></div>
+                                        </div>
+                                        <span class="skill-percent">80%</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-name">Git / Version Control</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" data-level="85%"></div>
+                                        </div>
+                                        <span class="skill-percent">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tools & Others -->
+                            <div class="skill-category">
+                                <h3 class="skill-category-title">
+                                    <i class="fas fa-tools skill-icon"></i>
+                                    Tools & Others
+                                </h3>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Git & GitHub</span>
+                                    <span class="skill-tag">VS Code</span>
+                                    <span class="skill-tag">Figma</span>
+                                    <span class="skill-tag">Adobe XD</span>
+                                    <span class="skill-tag">Webpack</span>
+                                    <span class="skill-tag">jQuery</span>
+                                    <span class="skill-tag">Bootstrap</span>
+                                    <span class="skill-tag">WordPress</span>
+                                    <span class="skill-tag">SEO</span>
+                                    <span class="skill-tag">Accessibility</span>
+                                    <span class="skill-tag">Performance</span>
+                                    <span class="skill-tag">Cross-browser</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience & Education -->
+                    <div class="about-section">
+                        <h2 class="section-title">Experience & Education</h2>
+                        
+                        <!-- Experience Timeline -->
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2024 - Present</div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">Freelance Web Developer</h3>
+                                    <p class="timeline-company">Self-employed</p>
+                                    <p class="timeline-description">
+                                        Building custom websites and web applications for clients across various industries. 
+                                        Responsibilities include client consultation, project planning, development, testing, 
+                                        deployment, and maintenance.
+                                    </p>
+                                    <ul class="timeline-list">
+                                        <li>Developed 15+ responsive websites using HTML, CSS, JavaScript, and PHP</li>
+                                        <li>Created custom WordPress themes and plugins</li>
+                                        <li>Implemented SEO best practices resulting in 40%+ traffic increase for clients</li>
+                                        <li>Improved website performance scores by 60% on average</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">2023 - 2024</div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">Junior Web Developer</h3>
+                                    <p class="timeline-company">Mbojo Solutions</p>
+                                    <p class="timeline-description">
+                                        Worked on various web projects for agency clients, focusing on frontend development 
+                                        and collaborating with designers and backend developers.
+                                    </p>
+                                    <ul class="timeline-list">
+                                        <li>Converted Figma designs to responsive HTML/CSS websites</li>
+                                        <li>Implemented JavaScript functionality for interactive features</li>
+                                        <li>Collaborated with team using Git version control</li>
+                                        <li>Participated in code reviews and agile development process</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">2022 - 2024</div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">Web Development Student</h3>
+                                    <p class="timeline-company">Self-taught & Online Courses</p>
+                                    <p class="timeline-description">
+                                        Dedicated time to learning web development fundamentals and building personal projects 
+                                        to practice and showcase skills.
+                                    </p>
+                                    <ul class="timeline-list">
+                                        <li>Completed various online courses in HTML, CSS, JavaScript, and PHP</li>
+                                        <li>Built 10+ personal projects to practice skills</li>
+                                        <li>Participated in online coding challenges and communities</li>
+                                        <li>Started contributing to open-source projects</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Education -->
+                        <div class="education">
+                            <h3 class="education-title">Education</h3>
+                            <div class="education-item">
+                                <div class="education-degree">Diploma In Information Technology</div>
+                                <div class="education-school">Mount Kenya University</div>
+                                <div class="education-year">2021 - present</div>
+                                <div class="education-details">
+                                    Focus on web development, Graphic design, and database management.
+                                </div>
+                            </div>
+                            
+                            <div class="education-item">
+                                <div class="education-degree">Software Engineering</div>
+                                <div class="education-school">PowerLearnProject Africa(PLP ACADEMY)</div>
+                                <div class="education-year">2025 - Present</div>
+                                <div class="education-details">
+                                    Continuously updating skills through web development courses and certifications 
+                                    in modern web development technologies and best practices.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Work Philosophy -->
+                    <div class="about-section">
+                        <h2 class="section-title">My Work Philosophy</h2>
+                        <div class="philosophy-grid">
+                            <div class="philosophy-card">
+                                <div class="philosophy-icon">
+                                    <i class="fas fa-bullseye"></i>
+                                </div>
+                                <h3 class="philosophy-title">Problem Solving</h3>
+                                <p class="philosophy-description">
+                                    I approach every project as a problem to be solved. Understanding the core 
+                                    need is more important than just writing code.
+                                </p>
+                            </div>
+                            
+                            <div class="philosophy-card">
+                                <div class="philosophy-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h3 class="philosophy-title">Continuous Learning</h3>
+                                <p class="philosophy-description">
+                                    Web development evolves rapidly. I dedicate time each week to learning new 
+                                    technologies and improving existing skills.
+                                </p>
+                            </div>
+                            
+                            <div class="philosophy-card">
+                                <div class="philosophy-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h3 class="philosophy-title">Clear Communication</h3>
+                                <p class="philosophy-description">
+                                    I believe in transparent communication with clients and colleagues. Regular 
+                                    updates and clear explanations build trust.
+                                </p>
+                            </div>
+                            
+                            <div class="philosophy-card">
+                                <div class="philosophy-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <h3 class="philosophy-title">Quality Over Quantity</h3>
+                                <p class="philosophy-description">
+                                    Clean, maintainable code and attention to detail result in better products 
+                                    that stand the test of time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action -->
+                    <div class="about-cta">
+                        <h2 class="cta-title">Let's Work Together!</h2>
+                        <p class="cta-text">
+                            Have a project in mind or want to collaborate? I'd love to hear about it.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="contact.html" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Get In Touch
+                            </a>
+                            <a href="projects.html" class="btn btn-secondary">
+                                <i class="fas fa-code"></i> View My Projects
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">mbojo<span>dev</span></a>
+                    <p class="footer-tagline">Building the web with clean code and creativity.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/mbojodev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/mbojodev" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/mbojodev" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:hello@mbojodev.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Services</h3>
+                    <ul>
+                        <li><a href="services.html#websites">Website Development</a></li>
+                        <li><a href="services.html#php">PHP Applications</a></li>
+                        <li><a href="services.html#responsive">Responsive Design</a></li>
+                        <li><a href="services.html#maintenance">Website Maintenance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Get In Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Web Developer</p>
+                    <p><i class="fas fa-envelope"></i> hello@mbojodev.com</p>
+                    <p><i class="fas fa-phone"></i> Available for projects</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> mbojodev. All rights reserved.</p>
+                <p>Built with <i class="fas fa-heart"></i> and pure HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    
+    <!-- About Page Specific Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate skill bars when they come into view
+            const animateSkillBars = function() {
+                const skillBars = document.querySelectorAll('.skill-level');
+                
+                skillBars.forEach(bar => {
+                    const rect = bar.getBoundingClientRect();
+                    const isVisible = (rect.top <= window.innerHeight * 0.9);
+                    
+                    if (isVisible && !bar.classList.contains('animated')) {
+                        bar.classList.add('animated');
+                        // read intended width from data-level attribute (no inline CSS in HTML)
+                        const width = bar.getAttribute('data-level') || bar.style.width;
+                        bar.style.width = '0';
+                        
+                        setTimeout(() => {
+                            bar.style.transition = 'width 1.5s ease-in-out';
+                            bar.style.width = width;
+                        }, 100);
+                    }
+                });
+            };
+            
+            // Set initial state for skill bars
+            const skillLevels = document.querySelectorAll('.skill-level');
+            skillLevels.forEach(bar => {
+                bar.style.transition = 'none';
+                bar.style.width = '0';
+            });
+            
+            // Run on load and scroll
+            window.addEventListener('load', animateSkillBars);
+            window.addEventListener('scroll', animateSkillBars);
+            
+            // Timeline animation
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            
+            const animateTimeline = function() {
+                timelineItems.forEach(item => {
+                    const rect = item.getBoundingClientRect();
+                    const isVisible = (rect.top <= window.innerHeight * 0.8);
+                    
+                    if (isVisible) {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+            
+            // Set initial state for timeline
+            timelineItems.forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(30px)';
+                item.style.transition = `opacity 0.5s ease ${index * 0.2}s, transform 0.5s ease ${index * 0.2}s`;
+            });
+            
+            window.addEventListener('load', animateTimeline);
+            window.addEventListener('scroll', animateTimeline);
+        });
+    </script>
+</body>
+</html>

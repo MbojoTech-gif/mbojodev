@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | mbojodev - Get In Touch</title>
+    <meta name="description" content="Contact mbojodev for web development projects, consultations, or questions. Let's build something amazing together.">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">mbojo<span class="logo-highlight">dev</span></span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1 class="contact-hero-title">Let's <span class="highlight">Work Together</span></h1>
+                <p class="contact-hero-subtitle">
+                    Have a project in mind? Need a web development consultation? 
+                    I'm here to help bring your ideas to life.
+                </p>
+                <div class="contact-hero-stats">
+                    <div class="contact-stat">
+                        <i class="fas fa-clock"></i>
+                        <div class="stat-content">
+                            <span class="stat-value">24-48 Hours</span>
+                            <span class="stat-label">Response Time</span>
+                        </div>
+                    </div>
+                    <div class="contact-stat">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="stat-content">
+                            <span class="stat-value">Free</span>
+                            <span class="stat-label">Initial Consultation</span>
+                        </div>
+                    </div>
+                    <div class="contact-stat">
+                        <i class="fas fa-comments"></i>
+                        <div class="stat-content">
+                            <span class="stat-value">3 Ways</span>
+                            <span class="stat-label">To Contact Me</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Main Section -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2 class="contact-info-title">Get In Touch</h2>
+                    <p class="contact-info-subtitle">
+                        Choose your preferred way to reach out. I'm available for projects, 
+                        consultations, and collaborations.
+                    </p>
+                    
+                    <!-- WhatsApp Contact Card -->
+                    <div class="contact-method-card whatsapp-card">
+                        <div class="method-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3 class="method-title">WhatsApp</h3>
+                            <p class="method-description">
+                                Fastest way to reach me. Send a message directly to my WhatsApp.
+                            </p>
+                            <div class="method-details">
+                                <p><i class="fas fa-phone"></i> +254 108 780 257</p>
+                                <p><i class="fas fa-clock"></i> Available: Mon-Fri, 9AM-6PM EAT</p>
+                            </div>
+                            <button id="openWhatsApp" class="btn btn-success">
+                                <i class="fab fa-whatsapp"></i> Message on WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Email Contact Card -->
+                    <div class="contact-method-card email-card">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3 class="method-title">Email</h3>
+                            <p class="method-description">
+                                Send detailed project descriptions, proposals, or questions via email.
+                            </p>
+                            <div class="method-details">
+                                <p><i class="fas fa-envelope"></i> hello@mbojodev.com</p>
+                                <p><i class="fas fa-reply"></i> Response within 24 hours</p>
+                            </div>
+                            <a href="mailto:hello@mbojodev.com" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Send Email
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media -->
+                    <div class="contact-social">
+                        <h3 class="social-title">Follow & Connect</h3>
+                        <p class="social-subtitle">Stay updated with my latest work and insights</p>
+                        <div class="social-links">
+                            <a href="https://github.com/mbojodev" target="_blank" rel="noopener" class="social-link github">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com/in/mbojodev" target="_blank" rel="noopener" class="social-link linkedin">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://twitter.com/mbojodev" target="_blank" rel="noopener" class="social-link twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="https://instagram.com/mbojodev" target="_blank" rel="noopener" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Response Info -->
+                    <div class="quick-response">
+                        <h3 class="response-title">For Quick Responses</h3>
+                        <ul class="response-tips">
+                            <li><i class="fas fa-lightbulb"></i> Include project details in your first message</li>
+                            <li><i class="fas fa-lightbulb"></i> Mention your timeline and budget if applicable</li>
+                            <li><i class="fas fa-lightbulb"></i> Attach reference materials or examples</li>
+                            <li><i class="fas fa-lightbulb"></i> WhatsApp is fastest for urgent matters</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <div class="form-header">
+                        <h2 class="form-title">Send a Message</h2>
+                        <p class="form-subtitle">
+                            Fill out the form below and I'll get back to you as soon as possible.
+                        </p>
+                    </div>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i> Full Name *
+                            </label>
+                            <input type="text" id="name" name="name" required 
+                                   placeholder="Enter your full name">
+                            <div class="error-message" id="nameError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> Email Address *
+                            </label>
+                            <input type="email" id="email" name="email" required 
+                                   placeholder="Enter your email address">
+                            <div class="error-message" id="emailError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">
+                                <i class="fas fa-phone"></i> Phone Number (Optional)
+                            </label>
+                            <input type="tel" id="phone" name="phone" 
+                                   placeholder="Enter your phone number">
+                            <div class="error-message" id="phoneError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-tag"></i> Subject *
+                            </label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Select a subject</option>
+                                <option value="website">Website Development</option>
+                                <option value="php">PHP Application</option>
+                                <option value="redesign">Website Redesign</option>
+                                <option value="maintenance">Website Maintenance</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="error-message" id="subjectError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">
+                                <i class="fas fa-money-bill-wave"></i> Project Budget (Optional)
+                            </label>
+                            <select id="budget" name="budget">
+                                <option value="" selected>Select budget range</option>
+                                <option value="500-1000">$500 - $1,000</option>
+                                <option value="1000-2500">$1,000 - $2,500</option>
+                                <option value="2500-5000">$2,500 - $5,000</option>
+                                <option value="5000+">$5,000+</option>
+                                <option value="not-sure">Not sure yet</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i> Your Message *
+                            </label>
+                            <textarea id="message" name="message" rows="6" required 
+                                      placeholder="Describe your project or inquiry in detail..."></textarea>
+                            <div class="error-message" id="messageError"></div>
+                            <div class="char-count">
+                                <span id="charCount">0</span> / 1000 characters
+                            </div>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">
+                                Subscribe to my newsletter for web development tips and updates
+                            </label>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                            <button type="button" class="btn btn-secondary" id="sendViaWhatsApp">
+                                <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                            </button>
+                        </div>
+                        
+                        <p class="form-note">
+                            <i class="fas fa-shield-alt"></i> Your information is secure and will never be shared with third parties.
+                        </p>
+                    </form>
+                    
+                    <!-- WhatsApp Quick Message -->
+                    <div class="whatsapp-quick" id="whatsappQuick">
+                        <h3 class="quick-title">
+                            <i class="fab fa-whatsapp"></i> Quick WhatsApp Message
+                        </h3>
+                        <p class="quick-subtitle">Pre-filled message for faster contact</p>
+                        <div class="quick-message">
+                            <p id="quickMessageText">Hello mbojodev, I'm interested in discussing a web development project.</p>
+                            <button class="btn btn-success" id="sendQuickWhatsApp">
+                                <i class="fab fa-whatsapp"></i> Send This Message
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <div class="faq-header">
+                <h2 class="faq-title">Frequently Asked Questions</h2>
+                <p class="faq-subtitle">Common questions about working with me</p>
+            </div>
+            
+            <div class="faq-items">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's your typical response time?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I typically respond within <strong>24-48 hours</strong> for emails and 
+                        <strong>within a few hours</strong> for WhatsApp messages during business hours 
+                        (Monday to Friday, 9AM-6PM East Africa Time).</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer free consultations?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! I offer a <strong>free 30-minute consultation</strong> for new projects. 
+                        We can discuss your requirements, timeline, and budget to see if we're a good fit.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What information should I provide?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For the best response, include: 1) Project description, 2) Your goals, 
+                        3) Timeline, 4) Budget range, and 5) Any examples or references you have.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you work with international clients?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! I work with clients from all over the world. All communication 
+                        can be done remotely via email, WhatsApp, and video calls.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="contact-cta">
+        <div class="container">
+            <h2 class="cta-title">Ready to Start Your Project?</h2>
+            <p class="cta-text">
+                Let's discuss how I can help bring your web development ideas to life.
+            </p>
+            <div class="cta-buttons">
+                <button id="ctaWhatsApp" class="btn btn-large btn-success">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </button>
+                <a href="projects.html" class="btn btn-large btn-secondary">
+                    <i class="fas fa-eye"></i> View My Work
+                </a>
+            </div>
+            <p class="cta-note">
+                <i class="fas fa-bolt"></i> Fastest response: WhatsApp +255 108 780 257
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">mbojo<span>dev</span></a>
+                    <p class="footer-tagline">Building the web with clean code and creativity.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/mbojodev" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/mbojodev" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/mbojodev" target="_blank" rel="noopener" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:hello@mbojodev.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Services</h3>
+                    <ul>
+                        <li><a href="services.html#websites">Custom Websites</a></li>
+                        <li><a href="services.html#php">PHP Applications</a></li>
+                        <li><a href="services.html#responsive">Responsive Design</a></li>
+                        <li><a href="services.html#maintenance">Website Maintenance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Web Developer</p>
+                    <p><i class="fas fa-envelope"></i> techmbojo@gmail.com</p>
+                    <p><i class="fab fa-whatsapp"></i> +254 108 780 257</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> mbojodev. All rights reserved.</p>
+                <p>Built with <i class="fas fa-heart"></i> and pure HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/contact-form.js"></script>
+    
+    <!-- Contact Page Specific Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // WhatsApp phone number
+            const whatsappNumber = '254108780257'; // Your WhatsApp number without +
+            
+            // Character counter for message textarea
+            const messageTextarea = document.getElementById('message');
+            const charCount = document.getElementById('charCount');
+            
+            if (messageTextarea && charCount) {
+                messageTextarea.addEventListener('input', function() {
+                    charCount.textContent = this.value.length;
+                    
+                    if (this.value.length > 1000) {
+                        this.value = this.value.substring(0, 1000);
+                        charCount.textContent = 1000;
+                    }
+                    
+                    // Update quick message
+                    updateQuickMessage();
+                });
+            }
+            
+            // Update quick WhatsApp message based on form inputs
+            function updateQuickMessage() {
+                const name = document.getElementById('name').value || 'there';
+                const subject = document.getElementById('subject').value || 'web development project';
+                const message = document.getElementById('message').value || '';
+                
+                let quickMessage = `Hello mbojodev, my name is ${name}. `;
+                
+                if (subject) {
+                    quickMessage += `I'm interested in ${getSubjectText(subject)}. `;
+                }
+                
+                if (message && message.length > 0) {
+                    // Take first 100 chars of message
+                    const shortMessage = message.substring(0, 100);
+                    quickMessage += `Here's what I need: ${shortMessage}...`;
+                } else {
+                    quickMessage += `Let's discuss this further.`;
+                }
+                
+                document.getElementById('quickMessageText').textContent = quickMessage;
+            }
+            
+            function getSubjectText(subjectValue) {
+                const subjects = {
+                    'website': 'website development',
+                    'php': 'PHP application development',
+                    'redesign': 'website redesign',
+                    'maintenance': 'website maintenance',
+                    'consultation': 'a consultation',
+                    'other': 'a project'
+                };
+                return subjects[subjectValue] || 'a web development project';
+            }
+            
+            // Listen to form changes to update quick message
+            document.getElementById('name').addEventListener('input', updateQuickMessage);
+            document.getElementById('subject').addEventListener('change', updateQuickMessage);
+            
+            // WhatsApp message functions
+            function sendWhatsAppMessage(message) {
+                // Encode the message for URL
+                const encodedMessage = encodeURIComponent(message);
+                // Create WhatsApp URL
+                const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+                // Open in new tab
+                window.open(whatsappUrl, '_blank');
+            }
+            
+            // Open WhatsApp with default message
+            document.getElementById('openWhatsApp').addEventListener('click', function() {
+                const defaultMessage = "Hello mbojodev, I'd like to discuss a web development project.";
+                sendWhatsAppMessage(defaultMessage);
+            });
+            
+            // Send via WhatsApp button (from form)
+            document.getElementById('sendViaWhatsApp').addEventListener('click', function() {
+                if (validateForm()) {
+                    const formData = getFormData();
+                    const message = formatWhatsAppMessage(formData);
+                    sendWhatsAppMessage(message);
+                    
+                    // Show confirmation
+                    showNotification('Opening WhatsApp with your message...', 'success');
+                }
+            });
+            
+            // Send quick WhatsApp message
+            document.getElementById('sendQuickWhatsApp').addEventListener('click', function() {
+                const quickMessage = document.getElementById('quickMessageText').textContent;
+                sendWhatsAppMessage(quickMessage);
+                showNotification('Opening WhatsApp with quick message...', 'success');
+            });
+            
+            // CTA WhatsApp button
+            document.getElementById('ctaWhatsApp').addEventListener('click', function() {
+                const message = "Hello mbojodev, I saw your portfolio and would like to discuss a project.";
+                sendWhatsAppMessage(message);
+            });
+            
+            // Form validation
+            function validateForm() {
+                let isValid = true;
+                
+                // Clear previous errors
+                document.querySelectorAll('.error-message').forEach(el => {
+                    el.textContent = '';
+                    el.style.display = 'none';
+                });
+                
+                // Validate name
+                const name = document.getElementById('name').value.trim();
+                if (!name) {
+                    showError('nameError', 'Please enter your name');
+                    isValid = false;
+                }
+                
+                // Validate email
+                const email = document.getElementById('email').value.trim();
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!email) {
+                    showError('emailError', 'Please enter your email');
+                    isValid = false;
+                } else if (!emailRegex.test(email)) {
+                    showError('emailError', 'Please enter a valid email address');
+                    isValid = false;
+                }
+                
+                // Validate subject
+                const subject = document.getElementById('subject').value;
+                if (!subject) {
+                    showError('subjectError', 'Please select a subject');
+                    isValid = false;
+                }
+                
+                // Validate message
+                const message = document.getElementById('message').value.trim();
+                if (!message) {
+                    showError('messageError', 'Please enter your message');
+                    isValid = false;
+                } else if (message.length < 10) {
+                    showError('messageError', 'Message should be at least 10 characters');
+                    isValid = false;
+                }
+                
+                return isValid;
+            }
+            
+            function showError(elementId, message) {
+                const errorElement = document.getElementById(elementId);
+                errorElement.textContent = message;
+                errorElement.style.display = 'block';
+            }
+            
+            function getFormData() {
+                return {
+                    name: document.getElementById('name').value.trim(),
+                    email: document.getElementById('email').value.trim(),
+                    phone: document.getElementById('phone').value.trim(),
+                    subject: document.getElementById('subject').value,
+                    budget: document.getElementById('budget').value,
+                    message: document.getElementById('message').value.trim(),
+                    newsletter: document.getElementById('newsletter').checked
+                };
+            }
+            
+            function formatWhatsAppMessage(formData) {
+                let message = `*New Message from ${formData.name}*\n\n`;
+                message += `*Email:* ${formData.email}\n`;
+                
+                if (formData.phone) {
+                    message += `*Phone:* ${formData.phone}\n`;
+                }
+                
+                message += `*Subject:* ${getSubjectText(formData.subject)}\n`;
+                
+                if (formData.budget) {
+                    message += `*Budget:* ${formData.budget}\n`;
+                }
+                
+                message += `\n*Message:*\n${formData.message}\n\n`;
+                message += `_Sent via mbojodev portfolio contact form_`;
+                
+                return message;
+            }
+            
+            // Form submission
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                if (validateForm()) {
+                    const submitBtn = document.querySelector('.submit-btn');
+                    const originalText = submitBtn.innerHTML;
+                    
+                    // Show loading state
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                    submitBtn.disabled = true;
+                    
+                    // Simulate sending (in real implementation, you would send to a server)
+                    setTimeout(() => {
+                        const formData = getFormData();
+                        
+                        // Show success message
+                        showNotification(`Thank you ${formData.name}! Your message has been sent successfully. I'll get back to you soon at ${formData.email}.`, 'success');
+                        
+                        // Reset form
+                        this.reset();
+                        charCount.textContent = '0';
+                        updateQuickMessage();
+                        
+                        // Reset button
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                    }, 1500);
+                }
+            });
+            
+            // Notification function
+            function showNotification(message, type) {
+                // Create notification element
+                const notification = document.createElement('div');
+                notification.className = `notification ${type}`;
+                notification.innerHTML = `
+                    <div class="notification-content">
+                        <i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'}"></i>
+                        <span>${message}</span>
+                    </div>
+                    <button class="notification-close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                `;
+                
+                // Add to body
+                document.body.appendChild(notification);
+                
+                // Show notification
+                setTimeout(() => {
+                    notification.classList.add('show');
+                }, 10);
+                
+                // Close button
+                notification.querySelector('.notification-close').addEventListener('click', function() {
+                    notification.classList.remove('show');
+                    setTimeout(() => {
+                        document.body.removeChild(notification);
+                    }, 300);
+                });
+                
+                // Auto remove after 5 seconds
+                setTimeout(() => {
+                    if (document.body.contains(notification)) {
+                        notification.classList.remove('show');
+                        setTimeout(() => {
+                            if (document.body.contains(notification)) {
+                                document.body.removeChild(notification);
+                            }
+                        }, 300);
+                    }
+                }, 5000);
+            }
+            
+            // FAQ Accordion
+            const faqQuestions = document.querySelectorAll('.contact-faq .faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle active class
+                    this.classList.toggle('active');
+                    
+                    // Toggle answer
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                        answer.style.paddingTop = '0';
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        answer.style.paddingTop = '20px';
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+            
+            // Initialize quick message
+            updateQuickMessage();
+        });
+    </script>
+</body>
+</html>

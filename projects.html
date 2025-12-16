@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | mbojodev - Web Development Portfolio</title>
+    <meta name="description" content="Browse mbojodev's web development projects including custom websites, PHP applications, and responsive designs built with HTML, CSS, JavaScript, and PHP.">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">mbojo<span class="logo-highlight">dev</span></span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Projects Hero Section -->
+    <section class="projects-hero">
+        <div class="container">
+            <div class="projects-hero-content">
+                <h1 class="projects-hero-title">My <span class="highlight">Projects</span></h1>
+                <p class="projects-hero-subtitle">
+                    A showcase of my web development work. Each project represents problem-solving, 
+                    attention to detail, and a commitment to quality.
+                </p>
+                <div class="projects-stats">
+                    <div class="project-stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="project-stat">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="project-stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Filter -->
+    <section class="projects-filter">
+        <div class="container">
+            <div class="filter-header">
+                <h2 class="filter-title">Browse My Work</h2>
+                <p class="filter-subtitle">Filter projects by category or technology</p>
+            </div>
+            
+            <div class="filter-controls">
+                <div class="filter-tags">
+                    <button class="filter-tag active" data-filter="all">All Projects</button>
+                    <button class="filter-tag" data-filter="html-css">HTML/CSS</button>
+                    <button class="filter-tag" data-filter="javascript">JavaScript</button>
+                    <button class="filter-tag" data-filter="php">PHP</button>
+                    <button class="filter-tag" data-filter="responsive">Responsive</button>
+                    <button class="filter-tag" data-filter="ecommerce">E-commerce</button>
+                </div>
+                
+                <div class="filter-search">
+                    <input type="text" id="projectSearch" placeholder="Search projects...">
+                    <button class="search-btn" title="Search projects" aria-label="Search projects">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid-section">
+        <div class="container">
+            <div class="projects-container">
+                <!-- Project 1: E-commerce Platform -->
+                <div class="project-detail-card" data-categories="php javascript responsive ecommerce" id="project1">
+                    <div class="project-detail-header">
+                        <div class="project-badge-group">
+                            <span class="project-badge featured">Featured</span>
+                            <span class="project-badge category">PHP</span>
+                            <span class="project-badge category">JavaScript</span>
+                        </div>
+                        <h2 class="project-detail-title">Modern E-commerce Platform</h2>
+                        <p class="project-detail-subtitle">Complete online store with payment integration</p>
+                    </div>
+                    
+                    <div class="project-detail-content">
+                        <div class="project-main-image">
+                            <div class="project-image-slider">
+                                <div class="slider-main">
+                                    <img src="images/projects/ecommerce-1.jpg" alt="E-commerce Platform - Homepage" onerror="this.src='https://via.placeholder.com/800x450/2563eb/ffffff?text=E-commerce+Platform'">
+                                </div>
+                                <div class="slider-thumbnails">
+                                    <img src="images/projects/ecommerce-2.jpg" alt="Product Page" onerror="this.src='https://via.placeholder.com/100x60/7c3aed/ffffff?text=Product+Page'">
+                                    <img src="images/projects/ecommerce-3.jpg" alt="Shopping Cart" onerror="this.src='https://via.placeholder.com/100x60/06b6d4/ffffff?text=Shopping+Cart'">
+                                    <img src="images/projects/ecommerce-4.jpg" alt="Admin Panel" onerror="this.src='https://via.placeholder.com/100x60/10b981/ffffff?text=Admin+Panel'">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-details">
+                            <div class="project-overview">
+                                <h3 class="details-title">Project Overview</h3>
+                                <p class="overview-text">
+                                    A full-featured e-commerce platform built from scratch using PHP and MySQL. 
+                                    The platform includes user authentication, product management, shopping cart, 
+                                    secure checkout, and an admin dashboard for managing orders and inventory.
+                                </p>
+                                <div class="project-challenge">
+                                    <h4>The Challenge</h4>
+                                    <p>
+                                        The client needed a custom e-commerce solution that could handle their 
+                                        specific product variations, inventory management, and integrate with 
+                                        their existing shipping and payment systems.
+                                    </p>
+                                </div>
+                                <div class="project-solution">
+                                    <h4>The Solution</h4>
+                                    <p>
+                                        Developed a custom PHP application with a clean, responsive frontend 
+                                        and a robust backend. Implemented secure payment processing, real-time 
+                                        inventory tracking, and an intuitive admin interface.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="project-tech-details">
+                                <h3 class="details-title">Technical Details</h3>
+                                <div class="tech-stack-details">
+                                    <div class="tech-category">
+                                        <h4>Frontend</h4>
+                                        <ul>
+                                            <li>HTML5, CSS3 (Flexbox & Grid)</li>
+                                            <li>Vanilla JavaScript for interactivity</li>
+                                            <li>Responsive design for all devices</li>
+                                            <li>AJAX for dynamic content loading</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tech-category">
+                                        <h4>Backend</h4>
+                                        <ul>
+                                            <li>PHP 7.4 with OOP architecture</li>
+                                            <li>MySQL database with optimized queries</li>
+                                            <li>RESTful API for frontend-backend communication</li>
+                                            <li>Payment gateway integration (Stripe)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tech-category">
+                                        <h4>Features</h4>
+                                        <ul>
+                                            <li>User registration & authentication</li>
+                                            <li>Product search & filtering</li>
+                                            <li>Shopping cart with persistent storage</li>
+                                            <li>Order tracking system</li>
+                                            <li>Admin dashboard with analytics</li>
+                                            <li>Email notifications</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-metrics">
+                                    <h4>Performance Metrics</h4>
+                                    <div class="metrics-grid">
+                                        <div class="metric">
+                                            <span class="metric-value">98%</span>
+                                            <span class="metric-label">PageSpeed Score</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-value">1.2s</span>
+                                            <span class="metric-label">Load Time</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-value">100%</span>
+                                            <span class="metric-label">Mobile Responsive</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-value">AAA</span>
+                                            <span class="metric-label">Accessibility</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="project-results">
+                                <h3 class="details-title">Results & Impact</h3>
+                                <div class="results-grid">
+                                    <div class="result-card">
+                                        <div class="result-icon">
+                                            <i class="fas fa-chart-line"></i>
+                                        </div>
+                                        <div class="result-content">
+                                            <h4>40% Increase</h4>
+                                            <p>In online sales within first 3 months</p>
+                                        </div>
+                                    </div>
+                                    <div class="result-card">
+                                        <div class="result-icon">
+                                            <i class="fas fa-mobile-alt"></i>
+                                        </div>
+                                        <div class="result-content">
+                                            <h4>60% Mobile Traffic</h4>
+                                            <p>Perfect mobile experience led to higher conversion</p>
+                                        </div>
+                                    </div>
+                                    <div class="result-card">
+                                        <div class="result-icon">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                        <div class="result-content">
+                                            <h4>3x Faster</h4>
+                                            <p>Page load speed compared to previous solution</p>
+                                        </div>
+                                    </div>
+                                    <div class="result-card">
+                                        <div class="result-icon">
+                                            <i class="fas fa-smile"></i>
+                                        </div>
+                                        <div class="result-content">
+                                            <h4>100% Satisfied</h4>
+                                            <p>Client satisfaction with ongoing maintenance</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://demo.mbojodev.com/ecommerce" target="_blank" rel="noopener" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/mbojodev/ecommerce-platform" target="_blank" rel="noopener" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                                <a href="contact.html?project=ecommerce" class="btn btn-outline">
+                                    <i class="fas fa-question-circle"></i> Similar Project?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Task Management App -->
+                <div class="project-detail-card" data-categories="javascript responsive html-css" id="project2">
+                    <div class="project-detail-header">
+                        <div class="project-badge-group">
+                            <span class="project-badge category">JavaScript</span>
+                            <span class="project-badge category">HTML/CSS</span>
+                            <span class="project-badge category">Responsive</span>
+                        </div>
+                        <h2 class="project-detail-title">TaskFlow Productivity App</h2>
+                        <p class="project-detail-subtitle">Interactive task management with drag & drop</p>
+                    </div>
+                    
+                    <div class="project-detail-content">
+                        <div class="project-main-image">
+                            <div class="project-image-slider">
+                                <div class="slider-main">
+                                    <img src="images/projects/taskapp-1.jpg" alt="Task Management App - Dashboard" onerror="this.src='https://via.placeholder.com/800x450/7c3aed/ffffff?text=Task+Management+App'">
+                                </div>
+                                <div class="slider-thumbnails">
+                                    <img src="images/projects/taskapp-2.jpg" alt="Task Creation" onerror="this.src='https://via.placeholder.com/100x60/2563eb/ffffff?text=Task+Creation'">
+                                    <img src="images/projects/taskapp-3.jpg" alt="Drag & Drop" onerror="this.src='https://via.placeholder.com/100x60/06b6d4/ffffff?text=Drag+%26+Drop'">
+                                    <img src="images/projects/taskapp-4.jpg" alt="Mobile View" onerror="this.src='https://via.placeholder.com/100x60/10b981/ffffff?text=Mobile+View'">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-details">
+                            <div class="project-overview">
+                                <h3 class="details-title">Project Overview</h3>
+                                <p class="overview-text">
+                                    A responsive web application for task management built with vanilla JavaScript. 
+                                    Features include drag-and-drop functionality, local storage, task categorization, 
+                                    and priority management. The app works offline and syncs when back online.
+                                </p>
+                                <div class="project-challenge">
+                                    <h4>The Challenge</h4>
+                                    <p>
+                                        Create an intuitive, fast task management tool that works seamlessly across 
+                                        devices without requiring user accounts or server infrastructure.
+                                    </p>
+                                </div>
+                                <div class="project-solution">
+                                    <h4>The Solution</h4>
+                                    <p>
+                                        Built a Progressive Web App (PWA) using modern JavaScript features. 
+                                        Implemented local storage for data persistence and service workers for 
+                                        offline functionality. The drag-and-drop interface makes task management intuitive.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="project-tech-details">
+                                <h3 class="details-title">Technical Details</h3>
+                                <div class="tech-stack-details">
+                                    <div class="tech-category">
+                                        <h4>Technologies</h4>
+                                        <ul>
+                                            <li>HTML5 Semantic Elements</li>
+                                            <li>CSS3 with Flexbox & Grid</li>
+                                            <li>Vanilla JavaScript (ES6+)</li>
+                                            <li>Local Storage API</li>
+                                            <li>Drag & Drop API</li>
+                                            <li>Service Workers (PWA)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tech-category">
+                                        <h4>Key Features</h4>
+                                        <ul>
+                                            <li>Create, edit, delete tasks</li>
+                                            <li>Drag-and-drop task organization</li>
+                                            <li>Task categories & priority levels</li>
+                                            <li>Due dates & reminders</li>
+                                            <li>Dark/Light theme toggle</li>
+                                            <li>Offline functionality</li>
+                                            <li>Data export/import</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tech-category">
+                                        <h4>Performance</h4>
+                                        <ul>
+                                            <li>0.8s initial load time</li>
+                                            <li>60fps animations</li>
+                                            <li>100% Lighthouse score</li>
+                                            <li>Progressive enhancement</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-metrics">
+                                    <h4>User Experience Metrics</h4>
+                                    <div class="metrics-grid">
+                                        <div class="metric">
+                                            <span class="metric-value">95%</span>
+                                            <span class="metric-label">User Retention</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-value">4.8/5</span>
+                                            <span class="metric-label">User Rating</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-value">2min</span>
+                                            <span class="metric-label">Avg. Session</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-value">100+</span>
+                                            <span class="metric-label">Daily Active Users</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://demo.mbojodev.com/taskflow" target="_blank" rel="noopener" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/mbojodev/taskflow-app" target="_blank" rel="noopener" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Business Website -->
+                <div class="project-detail-card" data-categories="html-css responsive php" id="project3">
+                    <div class="project-detail-header">
+                        <div class="project-badge-group">
+                            <span class="project-badge category">PHP</span>
+                            <span class="project-badge category">HTML/CSS</span>
+                            <span class="project-badge category">Responsive</span>
+                        </div>
+                        <h2 class="project-detail-title">Corporate Business Website</h2>
+                        <p class="project-detail-subtitle">Modern website with custom CMS</p>
+                    </div>
+                    
+                    <div class="project-detail-content">
+                        <div class="project-main-image">
+                            <div class="project-image-slider">
+                                <div class="slider-main">
+                                    <img src="images/projects/business-1.jpg" alt="Business Website - Homepage" onerror="this.src='https://via.placeholder.com/800x450/06b6d4/ffffff?text=Business+Website'">
+                                </div>
+                                <div class="slider-thumbnails">
+                                    <img src="images/projects/business-2.jpg" alt="Services Page" onerror="this.src='https://via.placeholder.com/100x60/2563eb/ffffff?text=Services+Page'">
+                                    <img src="images/projects/business-3.jpg" alt="Blog Section" onerror="this.src='https://via.placeholder.com/100x60/7c3aed/ffffff?text=Blog+Section'">
+                                    <img src="images/projects/business-4.jpg" alt="Contact Form" onerror="this.src='https://via.placeholder.com/100x60/10b981/ffffff?text=Contact+Form'">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-details">
+                            <div class="project-overview">
+                                <h3 class="details-title">Project Overview</h3>
+                                <p class="overview-text">
+                                    A professional business website built with a custom PHP content management system. 
+                                    The site features a responsive design, blog functionality, contact forms with 
+                                    email integration, and an admin panel for easy content updates.
+                                </p>
+                                <div class="project-challenge">
+                                    <h4>The Challenge</h4>
+                                    <p>
+                                        The client needed a professional online presence that they could update 
+                                        themselves without technical knowledge, while maintaining brand consistency 
+                                        and SEO optimization.
+                                    </p>
+                                </div>
+                                <div class="project-solution">
+                                    <h4>The Solution</h4>
+                                    <p>
+                                        Developed a custom PHP CMS with an intuitive admin interface. Implemented 
+                                        a responsive design that works perfectly on all devices. Added SEO-friendly 
+                                        structure and fast loading times.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="project-tech-details">
+                                <h3 class="details-title">Technical Details</h3>
+                                <div class="tech-stack-details">
+                                    <div class="tech-category">
+                                        <h4>Frontend</h4>
+                                        <ul>
+                                            <li>Mobile-first responsive design</li>
+                                            <li>CSS Grid for complex layouts</li>
+                                            <li>Smooth CSS animations</li>
+                                            <li>Accessible semantic HTML</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tech-category">
+                                        <h4>Backend</h4>
+                                        <ul>
+                                            <li>Custom PHP CMS</li>
+                                            <li>MySQL database</li>
+                                            <li>Secure admin authentication</li>
+                                            <li>Image upload & management</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tech-category">
+                                        <h4>Features</h4>
+                                        <ul>
+                                            <li>WYSIWYG content editor</li>
+                                            <li>Blog with categories & tags</li>
+                                            <li>Contact form with spam protection</li>
+                                            <li>Newsletter subscription</li>
+                                            <li>SEO optimized URLs & metadata</li>
+                                            <li>Google Analytics integration</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-metrics">
+                                    <h4>Business Impact</h4>
+                                    <div class="metrics-grid">
+                                        <div class="metric">
+                                            <span class="metric-value">300%</span>
+                                            <span class="metric-label">Traffic Increase</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-value">50%</span>
+                                            <span class="metric-label">Lead Generation</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-value">#1</span>
+                                            <span class="metric-label">Google Ranking</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-value">0</span>
+                                            <span class="metric-label">Technical Issues</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://demo.mbojodev.com/business" target="_blank" rel="noopener" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="contact.html?project=business-website" class="btn btn-secondary">
+                                    <i class="fas fa-info-circle"></i> Case Study
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Projects Preview -->
+                <div class="more-projects">
+                    <h3 class="more-projects-title">More Projects</h3>
+                    <p class="more-projects-subtitle">Check out these additional projects</p>
+                    
+                    <div class="project-cards-mini">
+                        <div class="project-mini-card" data-categories="html-css responsive">
+                            <div class="mini-card-image">
+                                <img src="images/projects/portfolio-template.jpg" alt="Portfolio Template" onerror="this.src='https://via.placeholder.com/300x180/1e293b/ffffff?text=Portfolio+Template'">
+                            </div>
+                            <div class="mini-card-content">
+                                <h4>Portfolio Template</h4>
+                                <p>Responsive HTML/CSS portfolio template</p>
+                                <div class="mini-card-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>Responsive</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-mini-card" data-categories="php javascript">
+                            <div class="mini-card-image">
+                                <img src="images/projects/weather-app.jpg" alt="Weather App" onerror="this.src='https://via.placeholder.com/300x180/2563eb/ffffff?text=Weather+App'">
+                            </div>
+                            <div class="mini-card-content">
+                                <h4>Weather Dashboard</h4>
+                                <p>Real-time weather application with API</p>
+                                <div class="mini-card-tech">
+                                    <span>PHP</span>
+                                    <span>JavaScript</span>
+                                    <span>API</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-mini-card" data-categories="javascript html-css">
+                            <div class="mini-card-image">
+                                <img src="images/projects/game.jpg" alt="JavaScript Game" onerror="this.src='https://via.placeholder.com/300x180/7c3aed/ffffff?text=JavaScript+Game'">
+                            </div>
+                            <div class="mini-card-content">
+                                <h4>JavaScript Game</h4>
+                                <p>Interactive browser game with scoring</p>
+                                <div class="mini-card-tech">
+                                    <span>JavaScript</span>
+                                    <span>HTML5 Canvas</span>
+                                    <span>CSS3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="projects-cta">
+        <div class="container">
+            <h2 class="cta-title">Have a Project in Mind?</h2>
+            <p class="cta-text">
+                Let's discuss how I can help bring your ideas to life with custom web development.
+            </p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-large btn-primary">
+                    <i class="fas fa-paper-plane"></i> Start a Project
+                </a>
+                <a href="services.html" class="btn btn-large btn-secondary">
+                    <i class="fas fa-list"></i> View Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">mbojo<span>dev</span></a>
+                    <p class="footer-tagline">Building the web with clean code and creativity.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/mbojodev" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/mbojodev" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/mbojodev" target="_blank" rel="noopener" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:hello@mbojodev.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Services</h3>
+                    <ul>
+                        <li><a href="services.html#websites">Custom Websites</a></li>
+                        <li><a href="services.html#php">PHP Applications</a></li>
+                        <li><a href="services.html#responsive">Responsive Design</a></li>
+                        <li><a href="services.html#maintenance">Website Maintenance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Get In Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Web Developer</p>
+                    <p><i class="fas fa-envelope"></i> hello@mbojodev.com</p>
+                    <p><i class="fas fa-phone"></i> Available for projects</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> mbojodev. All rights reserved.</p>
+                <p>Built with <i class="fas fa-heart"></i> and pure HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    
+    <!-- Projects Page Specific Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Filter functionality
+            const filterTags = document.querySelectorAll('.filter-tag');
+            const projectCards = document.querySelectorAll('.project-detail-card, .project-mini-card');
+            const projectSearch = document.getElementById('projectSearch');
+            const searchBtn = document.querySelector('.search-btn');
+            
+            let activeFilter = 'all';
+            let searchTerm = '';
+            
+            // Filter by category
+            filterTags.forEach(tag => {
+                tag.addEventListener('click', function() {
+                    // Update active tag
+                    filterTags.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Get filter value
+                    activeFilter = this.getAttribute('data-filter');
+                    
+                    // Filter projects
+                    filterProjects();
+                });
+            });
+            
+            // Search functionality
+            function handleSearch() {
+                searchTerm = projectSearch.value.toLowerCase().trim();
+                filterProjects();
+            }
+            
+            projectSearch.addEventListener('input', handleSearch);
+            searchBtn.addEventListener('click', handleSearch);
+            projectSearch.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') handleSearch();
+            });
+            
+            // Combined filter function
+            function filterProjects() {
+                projectCards.forEach(card => {
+                    const categories = card.getAttribute('data-categories').toLowerCase();
+                    const title = card.querySelector('h2, h4').textContent.toLowerCase();
+                    const description = card.querySelector('p').textContent.toLowerCase();
+                    
+                    const matchesCategory = activeFilter === 'all' || categories.includes(activeFilter);
+                    const matchesSearch = !searchTerm || 
+                        title.includes(searchTerm) || 
+                        description.includes(searchTerm) ||
+                        categories.includes(searchTerm);
+                    
+                    if (matchesCategory && matchesSearch) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 100);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            }
+            
+            // Image slider functionality
+            const initImageSliders = function() {
+                document.querySelectorAll('.slider-thumbnails img').forEach(thumb => {
+                    thumb.addEventListener('click', function() {
+                        const mainImage = this.closest('.project-image-slider').querySelector('.slider-main img');
+                        const tempSrc = mainImage.src;
+                        mainImage.src = this.src;
+                        this.src = tempSrc;
+                        
+                        // Add active class to clicked thumbnail
+                        document.querySelectorAll('.slider-thumbnails img').forEach(img => {
+                            img.classList.remove('active');
+                        });
+                        this.classList.add('active');
+                    });
+                });
+            };
+            
+            initImageSliders();
+            
+            // Highlight current project from hash
+            const hash = window.location.hash;
+            if (hash) {
+                const targetProject = document.querySelector(hash);
+                if (targetProject) {
+                    setTimeout(() => {
+                        targetProject.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        
+                        // Highlight the project
+                        targetProject.style.boxShadow = '0 0 0 3px rgba(37, 99, 235, 0.3)';
+                        targetProject.style.transition = 'box-shadow 0.3s ease';
+                        
+                        setTimeout(() => {
+                            targetProject.style.boxShadow = '';
+                        }, 3000);
+                    }, 500);
+                }
+            }
+            
+            // Animate project cards on scroll
+            const animateProjectCards = function() {
+                const cards = document.querySelectorAll('.project-detail-card, .project-mini-card');
+                
+                cards.forEach((card, index) => {
+                    const rect = card.getBoundingClientRect();
+                    const isVisible = (rect.top <= window.innerHeight * 0.9);
+                    
+                    if (isVisible && card.style.display !== 'none') {
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, index * 100);
+                    }
+                });
+            };
+            
+            // Set initial state for project cards
+            projectCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease, display 0.3s ease';
+            });
+            
+            // Initial animation
+            setTimeout(() => {
+                animateProjectCards();
+            }, 300);
+            
+            window.addEventListener('scroll', animateProjectCards);
+            
+            // Filter projects on page load (in case of hash)
+            filterProjects();
+        });
+    </script>
+</body>
+</html>
