@@ -461,10 +461,88 @@ p {
 .hero-image {
     animation: fadeIn 1s ease 0.5s both;
 }
-.hero-image img {
-    width: 100%;
+
+.code-window {
+    background-color: #1e1e1e;
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    max-width: 100%;
+}
+
+.window-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #252526;
+    padding: 12px 20px;
+    border-bottom: 1px solid #333;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.window-dots {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.dot.red { background-color: #ff5f56; }
+.dot.yellow { background-color: #ffbd2e; }
+.dot.green { background-color: #27c93f; }
+
+.window-title {
+    color: var(--gray-medium);
+    font-family: var(--font-code);
+    font-size: 0.9rem;
+    flex: 1;
+    min-width: 0; /* Allow text to shrink */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.window-content {
+    padding: 15px;
+    overflow-x: auto; /* Changed from auto to better control */
+    max-width: 100%;
+}
+
+.window-content pre {
+    margin: 0;
+    font-family: var(--font-code);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    white-space: pre-wrap; /* Changed from pre to pre-wrap for mobile */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+.window-content code {
+    color: #d4d4d4;
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.window-content .php {
+    color: #569cd6;
+}
+
+.window-content .php-keyword {
+    color: #c586c0;
+}
+
+.window-content .php-string {
+    color: #ce9178;
 }
 
 /* ============================================
@@ -474,6 +552,10 @@ p {
 @media (max-width: 1024px) {
     .hero .container {
         gap: var(--space-lg);
+    }
+    
+    .window-content pre {
+        font-size: 0.85rem;
     }
 }
 
@@ -501,7 +583,34 @@ p {
     .tech-stack {
         justify-content: center;
     }
-   
+    
+    /* Code Window Mobile Fix */
+    .code-window {
+        order: -1; /* Move code window above text on mobile */
+        margin-bottom: var(--space-xl);
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .window-content {
+        padding: 12px;
+        overflow-x: auto; /* Allow horizontal scroll only when needed */
+    }
+    
+    .window-content pre {
+        font-size: 0.8rem;
+        white-space: pre; /* Change back to pre for code formatting */
+        overflow-x: auto; /* Allow horizontal scroll for code */
+        min-width: min-content; /* Allow content to determine width */
+    }
+    
+    .window-content code {
+        white-space: pre;
+        overflow-x: auto;
+        display: block;
+        min-width: min-content;
+    }
+    
     /* Prevent horizontal scroll on body */
     html, body {
         overflow-x: hidden;
@@ -527,6 +636,68 @@ p {
     .hero-subtitle {
         font-size: 1.5rem;
     }
+    
+    .code-window {
+        border-radius: var(--radius-md);
+    }
+    
+    .window-header {
+        padding: 10px 15px;
+    }
+    
+    .window-content {
+        padding: 10px;
+    }
+    
+    .window-content pre {
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
+    
+}
+
+/* ============================================
+   Alternative: Responsive Code Display
+   ============================================ */
+
+/* If you want the code to wrap completely (no horizontal scroll) */
+@media (max-width: 768px) {
+    .code-window.responsive-code .window-content pre {
+        white-space: pre-wrap;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        overflow-x: hidden;
+    }
+    
+    .code-window.responsive-code .window-content code {
+        white-space: pre-wrap;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+}
+
+/* ============================================
+   Optional: Custom Scrollbar for Code
+   ============================================ */
+
+.window-content::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+}
+
+.window-content::-webkit-scrollbar-track {
+    background: #2d2d2d;
+    border-radius: 3px;
+}
+
+.window-content::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 3px;
+}
+
+.window-content::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
     
     
 /* ============================================
@@ -3759,5 +3930,4 @@ p {
     .faq-title {
         font-size: 2rem;
     }
-}
 }
